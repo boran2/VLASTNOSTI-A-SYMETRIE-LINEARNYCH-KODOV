@@ -71,6 +71,9 @@ https://publications.waset.org/12279/low-complexity-high-performance-ldpc-codes-
 https://www.win.tue.nl/~aeb/codes/binary-1.html
 http://cs.indstate.edu/ge/CAGES/index.html
 http://opac.crzp.sk/?fn=detailBiblioForm&sid=65CF89236B0A7E124DD17CE040F7&seo=CRZP-detail-kniha
+http://linear.ups.edu/download/fcla-3.50-print.pdf
+https://msp.org/pjm/1965/15-3/pjm-v15-n3-p11-s.pdf
+https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
