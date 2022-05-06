@@ -1,100 +1,49 @@
-# Diplomova-praca
-téma: Grupy automorfizmov lineárnych kódov a lineárne kódy s predpísanou grupou automorfizmov
+# Diplomová práca
+téma: VLASTNOSTI A SYMETRIE LINEÁRNYCH KÓDOV DEFINOVANÝCH INCIDENČNÝMI MATICAMI REGULÁRNYCH GRAFOV S MALÝM OBVODOM
+MALÝM OBVODOM
 
 ## Popis projektu
 Lineárne kódy sú podpriestory konečnorozmerných vektrorových priestorov nad konečnými poľami. Majú preto bohaté grupy automorfizmov, ktoré zároveň obsahujú množstvo informácií o uvažovanom kóde. Určenie úplnej grupy automorfizmov kódu je výpočtovo náročná úloha. Namiesto určenia grupy automorfizmov pre daný kód sa preto uvažuje obrátená úloha zostrojenia kódu s predpísanou grupou automorfizmov. Cieľom práce je preskúmať oba smery tejto interakcie.
 
-Jedným zo spôsobov ako je možné vygenerovať lineárny LDPC kód je pomocou klietky (pravidelný k-regulárny graf s obvodom g). Z klietok je možné zistiť incidenčnú maticu ako aj grupy automorfizmov.
+Jedným zo spôsobov ako je možné vygenerovať binárnz lineárny LDPC kód je pomocou klietky (pravidelný k-regulárny graf s obvodom g) alebo rekordného grafu. Z klietok je možné zistiť incidenčnú maticu ako aj grupy automorfizmov. Z incidenčnej matice generujeme kontrolné matice lineárneho kódu, pomocou ktorých vieme získať lineárne kódy, grupu automorfizmov lineárnych kódov ako aj generujúce matice lineárnych kódov. Z grafov aj lineárnych kódov vieme zistiť množstvo informácií, na základe ktorých ich vieme vyhodnotit. Na riešenie problematiky navrhujeme 2 softvérové riešenia. Prvé riešenie je implementované v online aplikácii CoCalc vo forme SageMath skriptov.
+Druhé riešenie je implementované ako konzolová aplikácia v programovacom jazyku Python, kde je knižnica SageMath naimportovaná.
 
-## Ukážka riešenia č.1
-Prostredie: CoCalc (http://cocalc.com/) - online aplikácia na spúšťanie Sage projektov
-1. je potrebné vyplniť jednoduchú registráciu
-2. Po úspešnom registrovaní je potrebné zadať token: wyeXn32E31avtBUe (vpravo hore v projektoch je input "project invite token") a stlačiť enter
-3. Mal by sa Vám zobraziť projekt s viacerými súbormi a 3 adresármi
+## Používateľská príručka pre spustenie softvérových diel projektu
+Ako prvý krok je nutné stiahnutie obsahu tohto repozitára do svojho zariadenia pomocou príkazu:
 
-### 1. Generovanie klietok a rekordných grafov
+  git clone https://github.com/boran2/VLASTNOSTI-A-SYMETRIE-LINEARNYCH-KODOV.git
 
-#### 1. Sage grafy ako vstupné dáta
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre
-podľa nasledovného zoznamu klietok: [[3,5], [3,6], [3,7], [3,8], [3,10], [4,5], [7,5]]
+### Používateľská príručka pre spustenie 1. riešenia v online aplikácií CoCalc
+1. Registrácia na webovom prehliadači v online aplikácii CoCalc https://cocalc.com/, kde si
+používateľ založí prázdny projekt. 
 
-#### 2. Zoznam susedností ako vstupné dáta
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre
-podľa nasledovného zoznamu klietok: [[3,14], [3,16], [3,17], [3,18], [3,20], [3,23], [3,25], [4,7], [4,9], [4,10], [5,10], [7,7], [7,8], [10,5], [11,5], [12,5], [13,5]]
+2. Vloženie celého obsahu priečinka CoCalc do prázdneho projektu v online aplikácii CoCalc https://cocalc.com/ . V projekte sa vložením vytvorí
+rovnaká štruktúra priečinka CoCalc ako v tomto repozitári.
 
-#### 3. Vlastný návrh generovania Cage(6,4)
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné nastaviť parametre  k=6, g=4
+3. Spustenie 1. riešenia prostredníctvom online editora, v ktorom sa skript otvára dvojitým kliknutím. 
 
-#### 4. Zistenie Moorovho ohraničenia
-otvoriť a spustiť MooreBoundsCageValidation.sagew
+4. Po otvorení a spustení jedného zo skriptov používateľ sleduje výpisy a výstupné textové súbory v priečinkoch IncidenceMatrices, GeneratorMatrices, ParityCheckMatrices, AutomorphismGroups, ktoré sú uložené v priečinku consoleAppCages, poprípade modifikuje vstupné parametre k a g. Je nutné najskôr otvoriť 5 generovacích skriptov v nasledujúcom poradí:
+generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGeneratorMatrices.sagews, generateAutCodesFromCages.sagews a generateAutGroupLCode.sagews! Zabezpečia sa tým vstupné údaje pre zvyšné skripty.
 
-### 2. Získavanie údajov z klietok alebo rekordných grafov
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre alebo
-otvoriť a spustiť cagesData.sagew - funguje pre všetky uložené klietky a rekordné grafy
+### Používateľská príručka pre spustenie 2. riešenia v konzolovej aplikácií
+1. Na stránke https://www.sagemath.org/, v časti Download je potrebné zvoliť na základe zariadenia buď macOS binaries, Linux/macOS binaries alebo Windows binaries a následne verziu inštalačného súboru, ktorý po stiahnutí a spustení nainštaluje SageMath konzolu do zariadenia používateľa. My sme využili inštalačný súbor SageMath-9.3-Installer-v0.6.3.exe pre operačný systém Windows. 
 
-### 3. Lineárny kód a generujúca matica
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre alebo 
-otvoriť a spustiť generateGeneratorMatrices.sagew - funguje pre takmer všetky uložené kontrolné matice
-#### 1. Ukladanie kontrolných matíc
-otvoriť a spustiť generateParityCheckMatrices.sagew - funguje pre takmer všetky klietky alebo otvoriť generateParityCheckMatricesFromCages a sledovať ako skript vytvára/updejtuje kontrolné matice v priečinku ParityCheckMatrices vo forme textových súborov
+2. Otvorenie nainštalovanej SageMath konzoly. 
 
-#### 2. Ukladanie generujúcich matíc
-otvoriť a spustiť generateGeneratorMatrices.sagew - funguje pre takmer všetky uložené kontrolné matice alebo otvoriť generateGeneratorMatricesFromParityCheckMatrices a sledovať ako skript vytvára/updejtuje kontrolné matice v priečinku GeneratorMatrices vo forme textových súborov zo získaných kontrolných matíc, ktoré sme uvažovali v bode 6
+3. Presutie sa v konzole do priečinka consoleAppCages pomocou príkazov "cd" do priečinka consoleAppCages:
 
-#### 3. Minimálna kódová vzdialenosť
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre (funguje pre g <= 8) alebo 
-otvoriť a spustiť minDistanceLinearCodes.sagew - funguje pre niektore uložené generujúce matice (g <= 8) alebo
-otvoriť a spustiť linearCodesData.sagew - funguje pre niektore generujúce matice (g <= 8) 
+  cd <folderName>
+    ....
+  cd consoleAppCages
 
-#### 4. Počet slov v kóde
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre alebo
-otvoriť a spustiť maxnWordsLinearCodes.sagew - funguje pre všetky uložené generujúce matice alebo
-otvoriť a spustiť linearCodesData.sagew - funguje pre všetky uložené generujúce matice 
+4. Spustenie 2. riešenia načítaním hlavnej triedy v SageMath console:
+  
+  load(’Run.py’)
+  
+5. Používateľ sa naviguje podľa voľby možností v konzolovej aplikacii a takisto sleduje okrem výpisov aj výstupné textové súbory v priečinkoch IncidenceMatrices, GeneratorMatrices, ParityCheckMatrices a AutomorphismGroups, ktoré sú uložené v priečinku consoleAppCages
 
-#### 5. Počet automorfizmov
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre alebo
-otvoriť a spustiť autLinearCodesData.sagew - funguje pre všetky uložené generujúce matice alebo
-otvoriť a spustiť linearCodesData.sagew - funguje pre všetky uložené generujúce matice 
-
-#### 6. Rozmer generujúcej matice a dĺžka lin. kódu
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre alebo
-otvoriť a spustiť sizeNLinearCodesData.sagew - funguje pre všetky uložené generujúce matice alebo
-otvoriť a spustiť linearCodesData.sagew - funguje pre všetky uložené generujúce matice 
-
-#### 7. Porovnanie s perfektnými kódmi
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre, funguje keď poznáme minimálnu vzdialenosť alebo
-otvoriť a spustiť perfectLinearCodesParameter.sagew - funguje pre všetky uložené generujúce matice, kde poznáme minimálnu vzdialenosť alebo
-otvoriť a spustiť linearCodesData.sagew - funguje pre všetky uložené generujúce matice, kde poznáme minimálnu vzdialenosť
-
-## Ukážka riešenia č.2 (optimalizácia softvérového riešenia)
-Prostredie: SageMath príkazový riadok (https://www.sagemath.org/)
-1. je potrebné stiahnúť inštalačný súbor a spustiť ho
-2. vytvoria sa 3 súbory, Sage príkazový riadok, Sage notebook a Sage shell
-3. V Sage príkazovom riadku je potrebné sa dostať do priečinka s projektom a spustiť pomocou load("main.py")
-
-Konzolová aplikácia consoleAppCages: https://github.com/boran2/consoleAppCages.
-Zahŕňa vyššie zmieňenú optimalizovanú funkcionalitu vrámci jedného projektu. Požívateľ sa naviguje na základe čísel v menu.
-
-## PDF- verzia:
-LaTex_Diplomova_Praca.pdf
-
-## Aktuálna prezentácia:
-Boran_DP-Grupy automorfizmov linearnych kodov2.ppt
-
-## testovanie:
-### 1. Testovanie získaných klietok a rekordných grafov
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre, otestuje počet vrcholov a hran ako aj ci moze klietka existovat
-
-### 2. Testovanie lineárneho kódu
-otvoriť a spustiť generateCageAndLinearCodeByParameters.sagew - potrebné meniť k,g parametre - otestuje ci kod existuje 
-otvoriť a spustiť linearCodeValidation.sagew - funguje pre existujúce uložené dvojice kontrolných a generujúcich matíc vzniknutých z rovnakej klietky - otestuje ci kod existuje 
-
-### 3. Testovanie textových súborov
-otvoriť a spustiť generateGeneratorMatrices.sagew - otestuje ci nahodou subor s kontrolnou maticou nie je prazdny
-
-## vízie do budúcna:
-Zostrojiť lineárne kódy priamo z klietkovej grupy automorfizmov.
-Koľko existuje kódov s touto grupou automorfizmov?
+## PDF- verzia
+Získavanie výsledkov, generovanie a ukladania dát a výpočtvá náročnosť sú detailne popísané v dokumente Diplomova_Praca.pdf.
 
 ##  linky na publikácie:
 https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS16
@@ -112,5 +61,8 @@ http://opac.crzp.sk/?fn=detailBiblioForm&sid=65CF89236B0A7E124DD17CE040F7&seo=CR
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
+
+##  link na prácu v LATEX:
+link na repozitár, v ktorom ból projekt pôvodne vyvýjaný: https://github.com/boran2/Diplomova-praca
 
 
