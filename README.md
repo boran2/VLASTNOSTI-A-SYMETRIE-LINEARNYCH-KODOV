@@ -56,7 +56,7 @@ generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGe
 Získavanie výsledkov, generovanie a ukladanie dát, výpočtvá náročnosť sú detailne popísané v dokumente Diplomova_Praca.pdf.
 
 ##  Publikácie
-Publikácie,z ktorých sme čerpali, sú uložené v priečinku sourceMaterials.
+Publikácie, z ktorých sme čerpali, sú uložené v priečinku sourceMaterials.
 
 ##  linky na niektoré publikácie:
 https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS16
