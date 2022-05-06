@@ -77,6 +77,7 @@ https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pd
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7001068
 https://www.hrpub.org/download/20160630/UJAM2-12606331.pdf
 https://link.springer.com/content/pdf/10.1134%2FS0032946009040024.pdf
+https://ore.exeter.ac.uk/repository/bitstream/handle/10871/8325/WesemeyerS.pdf?sequence=2
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
