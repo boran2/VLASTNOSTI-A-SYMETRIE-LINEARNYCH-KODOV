@@ -1,6 +1,5 @@
 # Diplomová práca
 téma: VLASTNOSTI A SYMETRIE LINEÁRNYCH KÓDOV DEFINOVANÝCH INCIDENČNÝMI MATICAMI REGULÁRNYCH GRAFOV S MALÝM OBVODOM
-MALÝM OBVODOM
 
 ## Popis projektu
 Lineárne kódy sú podpriestory konečnorozmerných vektrorových priestorov nad konečnými poľami. Majú preto bohaté grupy automorfizmov, ktoré zároveň obsahujú množstvo informácií o uvažovanom kóde. Určenie úplnej grupy automorfizmov kódu je výpočtovo náročná úloha. Namiesto určenia grupy automorfizmov pre daný kód sa preto uvažuje obrátená úloha zostrojenia kódu s predpísanou grupou automorfizmov. Cieľom práce je preskúmať oba smery tejto interakcie.
