@@ -55,7 +55,10 @@ generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGe
 ## PDF- verzia
 Získavanie výsledkov, generovanie a ukladanie dát, výpočtvá náročnosť sú detailne popísané v dokumente Diplomova_Praca.pdf.
 
-##  linky na publikácie:
+##  Publikácie
+Publikácie,z ktorých sme čerpali, sú uložené v priečinku sourceMaterials.
+
+##  linky na niektoré publikácie:
 https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS16
 https://digital.library.adelaide.edu.au/dspace/bitstream/2440/45525/8/02whole.pdf
 https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
@@ -72,7 +75,7 @@ http://opac.crzp.sk/?fn=detailBiblioForm&sid=65CF89236B0A7E124DD17CE040F7&seo=CR
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
 
-##  pôvodný repozitár v GitHub:
-link na repozitár, v ktorom ból projekt pôvodne vyvýjaný: https://github.com/boran2/Diplomova-praca
+##  link na pôvodný repozitár v GitHub:
+repozitár, v ktorom ból projekt pôvodne vyvýjaný: https://github.com/boran2/Diplomova-praca
 
 
