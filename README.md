@@ -78,6 +78,7 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7001068
 https://www.hrpub.org/download/20160630/UJAM2-12606331.pdf
 https://link.springer.com/content/pdf/10.1134%2FS0032946009040024.pdf
 https://ore.exeter.ac.uk/repository/bitstream/handle/10871/8325/WesemeyerS.pdf?sequence=2
+https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.1497&rep=rep1&type=pdf
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
