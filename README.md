@@ -43,7 +43,7 @@ generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGe
 5. Používateľ sa naviguje podľa voľby možností v konzolovej aplikacii a takisto sleduje okrem výpisov aj výstupné textové súbory v priečinkoch IncidenceMatrices, GeneratorMatrices, ParityCheckMatrices a AutomorphismGroups, ktoré sú uložené v priečinku consoleAppCages
 
 ## PDF- verzia
-Získavanie výsledkov, generovanie a ukladania dát a výpočtvá náročnosť sú detailne popísané v dokumente Diplomova_Praca.pdf.
+Získavanie výsledkov, generovanie a ukladanie dát, výpočtvá náročnosť sú detailne popísané v dokumente Diplomova_Praca.pdf.
 
 ##  linky na publikácie:
 https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS16
@@ -62,7 +62,7 @@ http://opac.crzp.sk/?fn=detailBiblioForm&sid=65CF89236B0A7E124DD17CE040F7&seo=CR
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
 
-##  link na prácu v LATEX:
+##  pôvodný repozitár v GitHub:
 link na repozitár, v ktorom ból projekt pôvodne vyvýjaný: https://github.com/boran2/Diplomova-praca
 
 
