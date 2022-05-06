@@ -74,6 +74,7 @@ http://opac.crzp.sk/?fn=detailBiblioForm&sid=65CF89236B0A7E124DD17CE040F7&seo=CR
 http://linear.ups.edu/download/fcla-3.50-print.pdf
 https://msp.org/pjm/1965/15-3/pjm-v15-n3-p11-s.pdf
 https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7001068
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
