@@ -58,7 +58,7 @@ Získavanie výsledkov, generovanie a ukladanie dát, výpočtvá náročnosť s
 ##  Publikácie
 Publikácie, z ktorých sme čerpali, sú uložené v priečinku sourceMaterials.
 
-##  linky na niektoré publikácie:
+##  linky na publikácie:
 https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS16
 https://digital.library.adelaide.edu.au/dspace/bitstream/2440/45525/8/02whole.pdf
 https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
