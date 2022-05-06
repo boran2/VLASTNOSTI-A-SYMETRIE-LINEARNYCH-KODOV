@@ -76,6 +76,7 @@ https://msp.org/pjm/1965/15-3/pjm-v15-n3-p11-s.pdf
 https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7001068
 https://www.hrpub.org/download/20160630/UJAM2-12606331.pdf
+https://link.springer.com/content/pdf/10.1134%2FS0032946009040024.pdf
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
