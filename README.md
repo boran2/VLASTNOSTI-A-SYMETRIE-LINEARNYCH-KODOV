@@ -36,7 +36,10 @@ generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGe
 ```
   cd <folderName>
 ```
+
     ....
+    
+    
 ```
   cd consoleAppCages
 ```
