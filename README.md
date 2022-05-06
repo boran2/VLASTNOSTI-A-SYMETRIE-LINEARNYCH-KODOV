@@ -35,9 +35,8 @@ generateIncidenceMatrices.sagews, generateParityCheckMatrices.sagews, generateGe
 3. Presutie sa v konzole do priečinka consoleAppCages pomocou príkazov "cd" do priečinka consoleAppCages:
 ```
   cd <folderName>
+  ....
 ```
-
-    ....
     
     
 ```
