@@ -80,6 +80,7 @@ https://link.springer.com/content/pdf/10.1134%2FS0032946009040024.pdf
 https://ore.exeter.ac.uk/repository/bitstream/handle/10871/8325/WesemeyerS.pdf?sequence=2
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.1497&rep=rep1&type=pdf
 http://cage.ugent.be/~pv/data/uploads/2010b.pdf
+https://jwcn-eurasipjournals.springeropen.com/articles/10.1155/2007/48158
 
 ##  link na prácu v LATEX:
 overleaf: https://www.overleaf.com/read/fdkwtgxntwjs
